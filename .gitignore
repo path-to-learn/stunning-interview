@@ -1,8 +1,5 @@
 # Default ignored files
 .idea
 stunning-interview.iml
-.out
 .DS_Store
-
-
-
+/out/
