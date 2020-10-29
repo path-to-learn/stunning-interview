@@ -328,46 +328,6 @@ public class JavaTricks {
     }
 
     @Test
-    public void testListIterator() {
-        List<Integer> list1 = new ArrayList<>();
-        list1.add(10);
-        list1.add(20);
-        list1.add(30);
-
-        List<Integer> list2 = new ArrayList<>();
-        list2.add(10);
-        list2.add(20);
-        list2.add(30);
-
-        List<Integer> list3 = new ArrayList<>();
-        list3.add(10);
-        list3.add(20);
-        list3.add(30);
-
-        List<List<Integer>> list = new ArrayList<>();
-        list.add(list1);
-        list.add(list2);
-        list.add(list3);
-
-        PriorityQueue<Iterator<Integer>> pq = new PriorityQueue<>((a, b)->a.next()-b.next());
-
-        for (List<Integer> integerList : list) {
-            pq.add(integerList.iterator());
-        }
-        List<Integer> result = new ArrayList<>();
-
-        while(pq.size()!=0) {
-            Iterator<Integer> ll = pq.poll();
-            result.add(ll.next());
-            if (ll.hasNext())
-                pq.add(ll);
-        }
-
-        for (int i : result)
-            System.out.print(i + " ");
-    }
-
-    @Test
     public void testCharSiftByNum() {
         String name = "amit";
         int s = 3;
