@@ -11,9 +11,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-//TODO See this also - https://leetcode.com/problems/flatten-nested-list-iterator/
-// TODO https://leetcode.com/problems/peeking-iterator/
-
 public class ZigzagIterator {
 
     Queue<Iterator> queueIterator = null;
